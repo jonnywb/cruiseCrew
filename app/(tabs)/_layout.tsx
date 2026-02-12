@@ -15,6 +15,7 @@ export default function TabLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color, size }) => <Ionicons name="home" color={color} size={size} />,
+          headerShown: false,
         }}
       />
       <Tabs.Screen
@@ -22,6 +23,7 @@ export default function TabLayout() {
         options={{
           title: "My Ship",
           tabBarIcon: ({ color, size }) => <FontAwesome name="ship" color={color} size={size} />,
+          headerShown: false,
         }}
       />
       <Tabs.Screen
@@ -29,6 +31,7 @@ export default function TabLayout() {
         options={{
           title: "Account",
           tabBarIcon: ({ color, size }) => <MaterialIcons name="account-circle" color={color} size={size} />,
+          headerShown: true,
         }}
       />
     </Tabs>
